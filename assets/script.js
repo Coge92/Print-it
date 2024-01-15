@@ -16,3 +16,19 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+let arrowLeft = document.querySelector(".arrow_left")
+let arrowRight = document.querySelector(".arrow_right")
+
+console.log(arrowLeft);
+console.log(arrowRight);
+
+arrowLeft.addEventListener("click", () => {
+
+	alert("T'as cliqué à gauche")
+})
+
+arrowRight.addEventListener("click", () => {
+
+	alert("T'as cliqué à droite")
+})
