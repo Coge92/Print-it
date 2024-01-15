@@ -17,6 +17,8 @@ const slides = [
 	}
 ]
 
+console.log(slides.length);
+
 let arrowLeft = document.querySelector(".arrow_left")
 let arrowRight = document.querySelector(".arrow_right")
 
@@ -32,3 +34,20 @@ arrowRight.addEventListener("click", () => {
 
 	alert("T'as cliqué à droite")
 })
+
+let divContainerDot = document.querySelector(".dots")
+
+console.log(divContainerDot);
+
+for (let i = 0; i < slides.length; i++) {
+
+	let pointsSlider = document.createElement("div")
+	pointsSlider.classList.add("dot")
+	divContainerDot.appendChild(pointsSlider)
+
+}
+
+
+
+
+
