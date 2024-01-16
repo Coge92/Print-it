@@ -29,6 +29,10 @@ arrowLeft.addEventListener("click", () => {
 	console.log("T'as cliqué à gauche")
 	index-- 
 	console.log(index);
+
+	if (index < 0) {
+		index = slides.length - 1
+	}
 	sliderInteract(index) // lance la fonction sliderInteract
 })
 
@@ -39,6 +43,10 @@ arrowRight.addEventListener("click", () => {
 	console.log("T'as cliqué à droite")
 	index++
 	console.log(index)
+
+	if (index > slides.length - 1) { 
+		index = 0
+	}
 	sliderInteract(index) // lance la fonction sliderInteract
 })
 
@@ -83,3 +91,4 @@ function sliderInteract(x) {
 
 })
 }
+
